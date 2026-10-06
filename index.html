@@ -5,158 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 1.6 - Etiquetas de contenido y texto</title>
 </head>
+
 <body>
+
     <h1>Etiquetas de contenido y texto by Quique</h1>
-    <section>
-    <h2>Contenido</h2>
 
-    <p>Este es un párrafo de ejemplo para comprobar cómo se muestra la etiqueta p en una página web.</p>
+    <nav>
+        <ul>
+            <li><a href="#contenido">Contenido</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#texto">Texto</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
+            <li><a href="#caracteres">Caracteres</a></li>
+        </ul>
+    </nav>
 
-    <hr>
+    <!-- FILA: CONTENIDO -->
+    <section id="contenido">
+        <h2>Contenido</h2>
 
-    <pre>
+        <p>
+            Este es un párrafo de ejemplo para comprobar cómo se muestra
+            la etiqueta p en una página web.
+        </p>
+
+        <hr>
+
+        <pre>
 Este texto está escrito
 dentro de una etiqueta pre.
 Los espacios y saltos de línea
 se mantienen tal y como están escritos.
-    </pre>
+        </pre>
 
-    <blockquote>
-        La programación permite transformar ideas en soluciones mediante código.
-    </blockquote>
+        <blockquote>
+            La programación permite transformar ideas en soluciones mediante código.
+        </blockquote>
 
-    <div>
-        Este texto está dentro de un div, que sirve como contenedor de contenido.
-    </div>
+        <div>
+            Este texto está dentro de un div, que sirve como contenedor de contenido.
+        </div>
 
-    <dl>
-        <dt>HTML</dt>
-        <dd>Lenguaje utilizado para estructurar el contenido de las páginas web.</dd>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje utilizado para estructurar el contenido de las páginas web.</dd>
 
-        <dt>CSS</dt>
-        <dd>Lenguaje utilizado para dar estilo y presentación a una página web.</dd>
-    </dl>
+            <dt>CSS</dt>
+            <dd>Lenguaje utilizado para dar estilo y presentación a una página web.</dd>
+        </dl>
 
-    <figure>
-        <img src="img/ciudad.jpg" alt="Vista de una ciudad">
-        <figcaption>Imagen de una ciudad utilizada para comprobar la etiqueta figure.</figcaption>
-    </figure>
-</section>
-<section>
-    <h2>Listas</h2>
+        <figure>
+            <img src="img/ciudad.jpg" alt="Vista de una ciudad">
+            <figcaption>
+                Imagen de una ciudad utilizada para comprobar la etiqueta figure.
+            </figcaption>
+        </figure>
+    </section>
 
-    <ol type="A" start="3">
-        <li>Primer elemento de la lista</li>
-        <li>Segundo elemento de la lista</li>
-        <li>Tercer elemento de la lista</li>
-    </ol>
+    <!-- FILA: LISTAS -->
+    <section id="listas">
+        <h2>Listas</h2>
 
-    <ol reversed>
-        <li>Elemento número tres</li>
-        <li>Elemento número dos</li>
-        <li>Elemento número uno</li>
-    </ol>
+        <ol type="A" start="3">
+            <li>Primer elemento de la lista</li>
+            <li>Segundo elemento de la lista</li>
+            <li>Tercer elemento de la lista</li>
+        </ol>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-</section>
-<section>
-    <h2>Texto</h2>
+        <ol reversed>
+            <li>Elemento número tres</li>
+            <li>Elemento número dos</li>
+            <li>Elemento número uno</li>
+        </ol>
 
-    <p>
-        Este texto contiene <em>énfasis</em>,
-        <strong>texto importante</strong>,
-        <small>texto pequeño</small>,
-        <s>texto tachado</s> y una referencia a
-        <cite>una fuente de información</cite>.
-    </p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
 
-    <p>
-        También podemos utilizar <q>una cita breve</q>,
-        definir <dfn>HTML</dfn>,
-        utilizar <abbr title="HyperText Markup Language">HTML</abbr>
-        y mostrar una fecha con <time datetime="2026-10-06">6 de octubre de 2026</time>.
-    </p>
+    <!-- FILA: TEXTO -->
+    <section id="texto">
+        <h2>Texto</h2>
 
-    <p>
-        Para representar código usamos <code>print("Hola mundo")</code>,
-        una variable puede ser <var>nombre</var>
-        y la salida de un programa puede ser <samp>Hola mundo</samp>.
-    </p>
+        <p>
+            Este texto contiene <em>énfasis</em>,
+            <strong>texto importante</strong>,
+            <small>texto pequeño</small>,
+            <s>texto tachado</s> y una referencia a
+            <cite>una fuente de información</cite>.
+        </p>
 
-    <p>
-        Para guardar un documento podemos pulsar
-        <kbd>Ctrl</kbd> + <kbd>S</kbd>.
-        También podemos escribir H<sub>2</sub>O y 2<sup>10</sup>.
-    </p>
+        <p>
+            También podemos utilizar <q>una cita breve</q>,
+            definir <dfn>HTML</dfn>,
+            utilizar <abbr title="HyperText Markup Language">HTML</abbr>
+            y mostrar una fecha con
+            <time datetime="2026-10-06">6 de octubre de 2026</time>.
+        </p>
 
-    <p>
-        Este texto tiene <i>una parte en cursiva</i>,
-        <b>una parte en negrita</b>,
-        <u>una parte subrayada</u>,
-        <mark>una parte resaltada</mark>
-        y una palabra dentro de un <span>span</span>.
-    </p>
+        <p>
+            Para representar código usamos
+            <code>print("Hola mundo")</code>,
+            una variable puede ser <var>nombre</var>
+            y la salida de un programa puede ser
+            <samp>Hola mundo</samp>.
+        </p>
 
-    <p>
-        Este texto tiene un salto de línea<br>
-        para comprobar el funcionamiento de br.
-    </p>
+        <p>
+            Para guardar un documento podemos pulsar
+            <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+            También podemos escribir H<sub>2</sub>O y 2<sup>10</sup>.
+        </p>
 
-    <p>
-        Esta palabra es muy larga y puede dividirse con w<wbr>br
-        cuando sea necesario.
-    </p>
-</section>
-<section>
-    <h2>Enlaces</h2>
+        <p>
+            Este texto tiene <i>una parte en cursiva</i>,
+            <b>una parte en negrita</b>,
+            <u>una parte subrayada</u>,
+            <mark>una parte resaltada</mark>
+            y una palabra dentro de un <span>span</span>.
+        </p>
 
-    <p>
-        <a href="https://www.google.com" target="_blank">
-            Abrir Google en una nueva pestaña
-        </a>
-    </p>
+        <p>
+            Este texto tiene un salto de línea<br>
+            para comprobar el funcionamiento de br.
+        </p>
 
-    <p>
-        <a href="mailto:correo.inventado@example.com">
-            Enviar un correo electrónico
-        </a>
-    </p>
+        <p>
+            Esta palabra es muy larga y puede dividirse con
+            w<wbr>br cuando sea necesario.
+        </p>
+    </section>
 
-    <p>
-        <a href="tel:+34900000123">
-            Llamar por teléfono
-        </a>
-    </p>
+    <!-- FILA: ENLACES -->
+    <section id="enlaces">
+        <h2>Enlaces</h2>
 
-    <p>
-        <a href="archivo.txt" download>
-            Descargar un archivo
-        </a>
-    </p>
-</section>
-<section>
-    <h2>Caracteres</h2>
+        <p>
+            <a href="https://www.google.com" target="_blank">
+                Abrir Google en una nueva pestaña
+            </a>
+        </p>
 
-    <p>
-        Para mostrar una etiqueta HTML en pantalla podemos escribir
-        &lt;p&gt;Este es un párrafo&lt;/p&gt;
-    </p>
+        <p>
+            <a href="mailto:correo.inventado@example.com">
+                Enviar un correo electrónico
+            </a>
+        </p>
 
-    <p>
-        El símbolo del euro se puede escribir de tres formas:
-        &euro; mediante entidad,
-        &#8364; mediante código decimal
-        y &#x20AC; mediante código hexadecimal.
-    </p>
+        <p>
+            <a href="tel:+34900000123">
+                Llamar por teléfono
+            </a>
+        </p>
 
-    <p>
-        Estos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;espacios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;se
-        mantienen mediante la entidad &amp;nbsp;.
-    </p>
-</section>
+        <p>
+            <a href="archivo.txt" download>
+                Descargar un archivo
+            </a>
+        </p>
+    </section>
+
+    <!-- FILA: CARACTERES -->
+    <section id="caracteres">
+        <h2>Caracteres</h2>
+
+        <p>
+            Para mostrar una etiqueta HTML en pantalla podemos escribir
+            &lt;p&gt;Este es un párrafo&lt;/p&gt;
+        </p>
+
+        <p>
+            El símbolo del euro se puede escribir de tres formas:
+            &euro; mediante entidad,
+            &#8364; mediante código decimal
+            y &#x20AC; mediante código hexadecimal.
+        </p>
+
+        <p>
+            Estos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;espacios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;se
+            mantienen mediante la entidad &amp;nbsp;.
+        </p>
+    </section>
+
 </body>
 </html>
